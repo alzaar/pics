@@ -3,7 +3,7 @@ import React from 'react';
 const SearchBar = (props) => {
   const onFormSubmit = (e) => {
     e.preventDefault();
-    console.log(props.term);
+    props.onSearch();
   }
   return (
     <div className="ui segment">
